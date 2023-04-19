@@ -1,7 +1,8 @@
+require('dotenv').config({path: __dirname + '/../.env'})
+require("./config/database").connect();
+
 const express = require('express');
 const app = express();
-require('dotenv').config({path: __dirname + '/../.env'})
-
 const port = process.env['PORT'];
 const userAuth = require('./routes/user_auth')
 
