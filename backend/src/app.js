@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 const port = process.env['PORT'];
 const userAuth = require('./routes/user_auth')
+const User = require('./model/user')
 
 app.use(express.json())
 
